@@ -29,7 +29,9 @@ public class solucion{
             tomarDatos();
             tamañoSopa();
             llenadoSopa();
+            imprimir();
             continuar();
+            solucionarSopa();
         }while(seguir);
     }
     
@@ -117,4 +119,17 @@ public class solucion{
            this.seguir= false;     
         }
     }
+    
+    private void imprimir(){
+        for(int i=0;i<this.tamañoFila;i++){
+            for(int j=0;j<this.tamañoColumna;j++){
+                System.out.print(this.sopaletras[i][j]+" ");
+            }
+            System.out.println("");
+        }
+    }
+
+    private void solucionarSopa() {
+        
+    }    
 }
